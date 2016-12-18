@@ -16,7 +16,7 @@ def main():
         if begin == hashlib.md5(test).hexdigest()[0:5]:
             password.append(hashlib.md5(test).hexdigest()[5])
         index += 1
-    print('The password is {}').format(''.join(password))
+    print('The password is: {}'.format(''.join(password)))
 
 
 if __name__ == '__main__':
