@@ -16,7 +16,7 @@ def main():
     for line in data:
         mostCommon = collections.Counter(line).most_common()
         print(mostCommon)
-        message += mostCommon[0][0]
+        message += mostCommon[-1][0]
     print('Your message is: {}'.format(message))
 
 
